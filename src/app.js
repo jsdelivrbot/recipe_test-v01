@@ -19,7 +19,6 @@ store.dispatch(addRecipe({ name: 'Spagueti Al Fredo', ingredients: " 1kg de past
 
 const state = store.getState();
 const visibleRecipes = getVisibleRecipes(state.recipes, state.filters);
-console.log(visibleRecipes);
 
 const jsx = (
   <Provider store={store}>
